@@ -13,14 +13,10 @@ Registers (0-based addresses):
 
 Notes
 -----
-* Binds to all interfaces by default (0.0.0.0) on TCP port 502.
-  Use --port nnn if you want to use another port (--port 502).
-* Logs all activity to console and to a rotating log file.
-* Prints each Modbus request (raw hex) and a parsed summary.
-* Supports Function Code 0x03 (Read Holding Registers). Other function codes
-  receive an Illegal Function (0x01) exception response.
-
-
+- Binds to all interfaces by default (0.0.0.0) on TCP port 502. Use --port nnn if you want to use another port (--port 502).
+- Logs all activity to console and to a rotating log file.
+- Prints each Modbus request (raw hex) and a parsed summary.
+- Supports Function Code 0x03 (Read Holding Registers). Other function codes receive an Illegal Function (0x01) exception response.
 - Logs all connections and requests to console and a rotating log file
 - Displays each Modbus request (raw hex + parsed)
 - Runs on all interfaces by default (`0.0.0.0`)
