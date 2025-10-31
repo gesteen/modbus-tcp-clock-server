@@ -1,6 +1,26 @@
 # modbus-tcp-clock-server
 Modbus TCP Clock Server
 
+Modbus server exposes the current system time via Holding Registers.
+
+Registers (0-based addresses):
+  0: Day     (1-31)
+  1: Month   (1-12)
+  2: Year    (e.g., 2025)
+  3: Hour    (0-23)
+  4: Minute  (0-59)
+  5: Second  (0-59)
+
+Notes
+-----
+* Binds to all interfaces by default (0.0.0.0) on TCP port 502.
+  Use --port nnn if you want to use another port (--port 502).
+* Logs all activity to console and to a rotating log file.
+* Prints each Modbus request (raw hex) and a parsed summary.
+* Supports Function Code 0x03 (Read Holding Registers). Other function codes
+  receive an Illegal Function (0x01) exception response.
+
+
 - Logs all connections and requests to console and a rotating log file
 - Displays each Modbus request (raw hex + parsed)
 - Runs on all interfaces by default (`0.0.0.0`)
