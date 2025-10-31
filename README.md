@@ -4,12 +4,12 @@ Modbus TCP Clock Server
 Modbus server exposes the current system time via Holding Registers.
 
 Registers (0-based addresses):
-  0: Day     (1-31)
-  1: Month   (1-12)
-  2: Year    (e.g., 2025)
-  3: Hour    (0-23)
-  4: Minute  (0-59)
-  5: Second  (0-59)
+  - 0: Day     (1-31)
+  - 1: Month   (1-12)
+  - 2: Year    (e.g., 2025)
+  - 3: Hour    (0-23)
+  - 4: Minute  (0-59)
+  - 5: Second  (0-59)
 
 Notes
 -----
