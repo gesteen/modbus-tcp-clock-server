@@ -28,7 +28,7 @@ Notes
 ### 🚀 Quick Start
 #### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/<your-username>/modbus-tcp-clock-server.git
+git clone https://github.com/gesteen/modbus-tcp-clock-server.git
 cd modbus-tcp-clock-server
 ```
 
